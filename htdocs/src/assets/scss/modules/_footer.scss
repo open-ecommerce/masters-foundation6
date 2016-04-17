@@ -1,0 +1,111 @@
+#footer-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  margin-top: rem-calc(60);
+  background-color: $footer-background;
+  color: #e8e8e8;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  #footer {
+    @include grid-row();
+    padding: rem-calc(30) 0;
+
+    article#nav_menu-2 {
+        padding-left: 60px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 200px;
+      li {
+        float: left;
+        position: relative;
+        &:before {
+          content: "\f054";
+          font-family: FontAwesome;
+          left: -1px;
+          position: absolute;
+          font-size: 13px;
+          top: 10px;
+        }
+        > a {
+          color: $white;
+        }
+      }
+    }
+    address.vcard {
+      font-style: normal;
+        position: relative;
+      a {
+        display: block;
+        padding: 0 0 5px 16px;
+        color: #e8e8e8;
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+      }
+      a.url.fn.org {
+        color: $global-logo-color;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0 0 10px 0;
+      }
+      a.email {
+        &:before {
+          content: "\f003";
+          font-family: FontAwesome;
+          left: -1px;
+          position: absolute;
+          font-size: 13px;
+          padding-top: 5px
+        }
+      }
+      span.tel {
+        padding: 0 0 10px 16px;
+        &:before {
+          content: "\f095";
+          font-family: FontAwesome;
+          left: -1px;
+          position: absolute;
+          font-size: 13px;
+          padding-top: 5px
+        }
+      }
+      span.adr {
+        padding: 10px 0 10px 16px;
+        &:before {
+          content: "\f041";
+          font-family: FontAwesome;
+          left: -1px;
+          position: absolute;
+          font-size: 13px;
+        }
+      }
+
+    }
+  }
+  div#copiright-wrapper {
+    font-size: 0.9rem;
+    border-top: rgba(51, 49, 49, 0.84) solid 1px;
+    background-color: #222121;
+    height: 65px;
+    padding-top: 20px;
+
+    #copiright-content {
+      @include grid-row();
+      .copiright-text, .copiright-oe {
+          background-color: #222121;
+      }
+
+
+      img.oe {
+          margin-top: -7px;
+      }
+    }
+
+  }
+}

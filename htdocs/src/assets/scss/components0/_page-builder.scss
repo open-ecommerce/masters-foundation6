@@ -1,0 +1,46 @@
+/*
+*  to use in the Page builder
+*/
+
+.panel-row-style-separator {
+.sow-slider-image-wrapper {
+	padding-top: 90px !important;
+	@include breakpoint(small) {
+			padding-top: 20px !important;
+	}
+	@include breakpoint(medium) {
+			padding-top: 200px !important;
+	}
+}
+}
+
+.panel-row-style-home-hero-banner {
+    .home-hero.panel-widget-style  {
+    		.sow-slider-image-wrapper {
+    			@include breakpoint(small) {
+    					padding-top: 80px !important;
+    			}
+    			@include breakpoint(medium) {
+    					padding-top: 350px !important;
+    			}
+    		}
+    }
+}
+
+
+
+
+.sow-slider-image-wrapper {
+	.sow-slider-content-wrapper {
+		.sow-slider-content {
+			color: $white;
+			font-size: 4rem;
+			line-height: 5rem;
+			margin-bottom: 70px;
+		}
+	}
+}
+
+.more-down {
+    margin-top: 250px;
+}

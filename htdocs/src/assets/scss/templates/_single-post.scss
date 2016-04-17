@@ -1,0 +1,84 @@
+
+// Page header
+#blog-hero {
+	.blog-title {
+		@include grid-row();
+		max-width: 55rem;
+	}
+
+	@include breakpoint(small) {
+		background-size: cover;
+		background-position: bottom;
+		padding: rem-calc(65%) 0;
+		margin: 0 0 rem-calc(32);
+		position: relative;
+		text-align: left;
+    opacity: 1;
+    max-height: 350px;
+    background-color: #333;
+	}
+
+	@include breakpoint(medium) {
+		background-size: cover;
+		background-position: center;
+		height: rem-calc(685);
+		margin: 0 0 rem-calc(72);
+	}
+
+	.tagline {
+
+		@include breakpoint(small) {
+			@include grid-column(8);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(12);
+			padding-top: 6rem;
+		}
+
+	}
+
+	h1 {
+		color: #fff;
+		font-weight: 500;
+
+		@include breakpoint(small) {
+			font-size: 2.2rem;
+		}
+
+		@include breakpoint(medium) {
+			font-size: 2.875rem;
+		}
+
+	}
+
+	h4 {
+		color: #fefefe;
+		font-weight: 300;
+		font-size: 1.3125rem;
+	}
+
+	.download { margin-top: rem-calc(20); }
+
+}
+
+
+#single-post {
+  @include grid-row();
+  margin-top: 3rem;
+
+  .main-content {
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
+
+    @include breakpoint(medium) {
+      @include grid-column(8);
+    }
+  }
+
+}
+
+#gallery-1 img {
+    border: none !important;
+}
