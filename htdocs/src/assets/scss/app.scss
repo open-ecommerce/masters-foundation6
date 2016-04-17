@@ -1,24 +1,12 @@
-/*
-  Foundation for Sites components:
-  Import the building blocks you need for your project.
-  Reducing the number of imported components will optimize page speed.
-  ---------------------------------------------------------------------
-  The Foundation framework is built by Zurb
-  Licensed under MIT Open Source
-*/
 
 //  Settings
 @import "global/settings"; // Foundation settings file.
 
 // Foundation mixins & browser resets
-@import '../components/foundation-sites/scss/foundation';
-
-// WP overrides
-@import "global/wp-admin"; // Fix issues with wp-admin bar positioning
-@import "global/wp-overrides"; // Override the default WordPress styling for some elements
+@import 'foundation';
 
 // Third-party libraries
-@import 'font-awesome';
+// ver si la vamos a usar@import 'font-awesome';
 @import 'motion-ui';
 
 // Foundation global styles
@@ -87,15 +75,13 @@
 @import "components/links";
 @import "components/page-builder";
 @import "components/preloader";
+@import "components/parallax";
+@import "components/image_hover_effects";
+@import "components/hero";
+
+// Templates
+@import "templates/single-post";
+
 
 // Typography
 @import "typography/base";
-
-// Templates
-@import "templates/front";
-@import "templates/kitchen-sink";
-@import "templates/page-default";
-@import "templates/page-sidebar-left";
-@import "templates/page-full-width";
-@import "templates/single-post";
-@import "templates/list-posts";

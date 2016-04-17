@@ -1,84 +1,106 @@
+.post {
+  box-shadow: 0 2px 0 rgba(204,204,204,.15);
+  margin-bottom: 1.3rem;
+  border: 1px solid #eee;
 
-// Page header
-#blog-hero {
-	.blog-title {
-		@include grid-row();
-		max-width: 55rem;
-	}
+  .content {
+    position: relative;
+    background: #fff;
+    padding: 0 0.75rem 0.75rem;
 
-	@include breakpoint(small) {
-		background-size: cover;
-		background-position: bottom;
-		padding: rem-calc(65%) 0;
-		margin: 0 0 rem-calc(32);
-		position: relative;
-		text-align: left;
-    opacity: 1;
-    max-height: 350px;
-    background-color: #333;
-	}
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #696969;
+      margin: 0;
+      padding: 5px 0;
 
-	@include breakpoint(medium) {
-		background-size: cover;
-		background-position: center;
-		height: rem-calc(685);
-		margin: 0 0 rem-calc(72);
-	}
-
-	.tagline {
-
-		@include breakpoint(small) {
-			@include grid-column(8);
-		}
-
-		@include breakpoint(medium) {
-			@include grid-column(12);
-			padding-top: 6rem;
-		}
-
-	}
-
-	h1 {
-		color: #fff;
-		font-weight: 500;
-
-		@include breakpoint(small) {
-			font-size: 2.2rem;
-		}
-
-		@include breakpoint(medium) {
-			font-size: 2.875rem;
-		}
-
-	}
-
-	h4 {
-		color: #fefefe;
-		font-weight: 300;
-		font-size: 1.3125rem;
-	}
-
-	.download { margin-top: rem-calc(20); }
-
-}
-
-
-#single-post {
-  @include grid-row();
-  margin-top: 3rem;
-
-  .main-content {
-    @include breakpoint(small) {
-      @include grid-column(12);
+      a {
+        color: #696969;
+      }
     }
 
-    @include breakpoint(medium) {
-      @include grid-column(8);
+    p {
+      font-size: 0.9rem;;
+      color: #aaaaaa;
+      margin: 0 0 5px;
+      padding: 0;
+    }
+
+    .verified {
+      &:before {
+        content: '\e60c';
+        font-family: icomoon;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 0.875rem;
+        background: #43AC6A;
+        color: #fff;
+        box-sizing: border-box;
+        padding: .15em;
+      }
+    }
+
+    .share {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      font-size: 0.875rem;
+      color: #aaaaaa;
+      line-height: 14px;
+      [class*="icon-"] {
+        font-size: 1rem;
+
+        @media only screen and (max-width: 40em) {
+         position: relative;
+         top: -2rem;
+         color: #fff;
+         font-weight: 900;
+         text-shadow: 2px 2px #333;
+        }
+      }
+
+      .count {
+        line-height: 14px;
+        display: inline-block;
+        position: relative;
+        top: -3px;
+        margin: 0 5px;
+
+        @media only screen and (max-width: 40em) {
+         position: relative;
+         top: -2.2rem;
+         color: #fff;
+         font-weight: 500;
+         text-shadow: 2px 2px #333;
+        }
+      }
     }
   }
-
 }
 
-#gallery-1 img {
-    border: none !important;
+.button-group {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0 0 0;
+
+  &:before {
+    content: attr(data-grouptype);
+    z-index: 99999;
+    color: #999;
+    display: block;
+    font-size: 1rem;
+    padding: 0.25em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 42.5%;
+    top: 0.35rem;
+  }
+
+  button + button {
+    margin-left: 5px;
+  }
 }
