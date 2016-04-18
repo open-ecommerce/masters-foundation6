@@ -1,19 +1,19 @@
 ![WP, WP-Cli, Composer, Foundation, Sass and Grunt ](foundation6-hero.jpg)
 
-#Putting all together with Foundation 6 for sites development
+##Putting all together with Foundation 6 for sites development
 This is the repository integrating some functionality with Foundation 6.
 we are working on it but you can already get some ideas looking at the code.
 For example how to work with templates, pages, partials with panini or how to organize the sass files with in src and the dist output for production.
 
-##You can see an in progress sample of this at:
+###You can see an in progress sample of this at:
 http://foundation6.oe-lab.tk
 
 
-##Do you want to participate help be helped?
+###Do you want to participate help or be helped?
 http://open-ecommerce.org/who-we-are/open-ecommerce-digital-agency.php
 
 
-##What are we talking about here:
+###What are we talking about here:
 
 *Foundation for sites:* application framework to create responsive websites. You can download it but we will use the foundation command line tool instead
 http://foundation.zurb.com/sites.html
